@@ -1,8 +1,3 @@
-import { serve } from 'https://deno.land/std@0.177.0/http/server.ts';
-import {
-  createHmac,
-  timingSafeEqual,
-} from 'https://deno.land/std@0.177.0/crypto/mod.ts';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -207,7 +202,7 @@ function mergeResults(
 // Main handler
 // ---------------------------------------------------------------------------
 
-serve(async (req) => {
+Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204, headers: CORS });
   }
