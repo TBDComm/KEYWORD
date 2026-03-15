@@ -4,6 +4,7 @@ export interface KeywordResult {
   mobileSearchVolume: number | null;
   totalSearchVolume: number | null;
   blogCount: number | null;
+  monthlyBlogCount: number | null;
   competitionRatio: number | null;
   competitionLevel: 'low' | 'mid' | 'high' | 'very-high' | null;
   shoppingCategory: string | null;
@@ -20,4 +21,5 @@ export type SortableColumn =
   | 'mobileSearchVolume'
   | 'totalSearchVolume'
   | 'blogCount'
+  | 'monthlyBlogCount'
   | 'competitionRatio';

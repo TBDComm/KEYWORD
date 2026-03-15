@@ -12,7 +12,8 @@ const COLUMNS: { key: SortableColumn | null; label: string; sortable: boolean; a
     { key: 'pcSearchVolume', label: 'PC 검색량', sortable: true, align: 'right' },
     { key: 'mobileSearchVolume', label: '모바일 검색량', sortable: true, align: 'right' },
     { key: 'totalSearchVolume', label: '총 검색량', sortable: true, align: 'right' },
-    { key: 'blogCount', label: '블로그 발행량', sortable: true, align: 'right' },
+    { key: 'monthlyBlogCount', label: '월간 블로그 발행량', sortable: true, align: 'right' },
+    { key: 'blogCount', label: '총 블로그 발행량', sortable: true, align: 'right' },
     { key: 'competitionRatio', label: '경쟁도', sortable: true, align: 'center' },
     { key: null, label: '쇼핑카테고리', sortable: false, align: 'left' },
   ];

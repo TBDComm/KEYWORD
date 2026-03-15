@@ -39,6 +39,12 @@ export function ResultRow({ result }: ResultRowProps) {
         className="px-4 py-3 text-sm text-right text-[var(--color-text-secondary)]"
         style={{ fontVariantNumeric: 'tabular-nums' }}
       >
+        {result.monthlyBlogCount === null ? '—' : result.monthlyBlogCount.toLocaleString('ko-KR')}
+      </td>
+      <td
+        className="px-4 py-3 text-sm text-right text-[var(--color-text-secondary)]"
+        style={{ fontVariantNumeric: 'tabular-nums' }}
+      >
         {result.blogCount === null ? '—' : result.blogCount.toLocaleString('ko-KR')}
       </td>
       <td className="px-4 py-3 text-sm text-center">
